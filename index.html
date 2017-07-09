@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Readers Cash</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<div class="container">
+    <header class="main-header">
+        <a class="logo" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="197" height="26"
+                 viewBox="0 0 197 26">
+                <image id="logo" width="197" height="26"
+                       xlink:href="data:img/png;base64,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"/>
+            </svg>
+        </a>
+        <ul class="main-menu">
+            <li><a href="#">How it works</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Join our team</a></li>
+            <li><a class="indiegogo" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="121"
+                     height="17" viewBox="0 0 121 17">
+                    <image id="indiegogo" width="121" height="17"
+                           xlink:href="data:img/png;base64,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"/>
+                </svg>
+                <p>We are life
+                <p>
+            </a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="screen1">
+            <video class="video" width="50%" height="auto" controls="controls" poster="img/mockup.png"></video>
+            <div class="about">
+                <h2 class="about__header">Get real <span class="about__cash">cash back</span> for each book you
+                    recommended throught <span class="about__readers">readers</span><span class="about__cash">.</span>cash
+                </h2>
+                <div class="about__form">
+                    <p class="about__text">Enter your E-mail and pick up your <span>Buy Button without</span> buying the
+                        book</p>
+                    <form class="about__mailform" method="post">
+                        <input class="textbox" type="email" name="mail" id="mail-id" placeholder="Enter your e-mail">
+                        <input class="btn" type="submit" value="get buy button">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <header class="main-header">
+            <a class="logo" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="197"
+                     height="26"
+                     viewBox="0 0 197 26">
+                    <image id="logo" width="197" height="26"
+                           xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMUAAAAaCAYAAAAHUJgKAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4QcBFDUEpSPU8QAADGFJREFUeNrtnHn0lXMex18tN6lIKUooGUshlKQm3HnLqOFaxmAwY4khMsicOEeWLMNESJ3Zsk9ZzrFMuTEkny4SmVCWSjTDKCJKHURXmj8+3+v39Pyeu/2S1Pm9z7nn3ue7b5/9+9wG+XTmNmBL4BNgCfAx8C7wNrAglct+Sx2QT2faAV2AjkB7oFX4tARGpnLZl+rSbj3qsb7RGDizRP7KfDrzEjAFeCiVy84rVjCfzrQGjgR+ARwEbFui3ceBeqKox48Sjcvkbw4cHD7X5NOZ6cCIVC77aKFAPp3ZDbgEOAnYbENPqB71WFeUI4o4+gAT8+nMVOAy4DjgvDq0UzEkHQm0LpL9JfAFsBh4zczy633Fvp857QgoljzNzN7Z0GPb1CApBTQHvjazlZXUiR/mN4DzgR2BrkB3oCduB0TxM+D5Im1+A8wCXgZeB94J5S+p47yuBvauoNxSSSOBG83sm+9tVdcPugN3xdJOx9eqHt8vDgf+CdwKXFhJhThRLEjlslOjCfl0phGwH3AMcCJOMHGsAiYA9wOWymVXxNpo/wNMvjVwHdBL0i/NrE4OgnrUo6zak8plVwMzgBn5dOZS4CbWpriXgQGpXHbJhp5MwFHAIOAvG3og9dg40bCawsE9OzGWPO0HJojVwDPAc7jbOAnn/4DjqccmhvVmIK9HfG5m6cKDpP2BHO4pK2A3SW3NrBaxStoC2BWPzXwGzDWzr8p1GozjDriHbQkwz8xWV1BvW2BnoAnuEJhf7YQl7QRshzOxhWb23zq0kQJ2AT4ys08j6Y2B3YE2OMN538zerbb9TQkbI1GsBTN7SdJUPD4SRXv88AIgqRdwFe71SUXKfSnpfuAyM1scbUBSN+AcIIMTRBTLJd0JDDezFbE8JO0LjMSdDA0iWe8DVm5ekjYDBodP51je27j9dI+ZrYmkfxZr5k/ACOAPwDBgK2AIMEpSK+By3MDfKtb+ImAsMNLMvqx2TyS1BM4CjsAJscAQcsDfzez1WPm2wGnAYXjAtznwUSg/0szeTuhja2Bo6GN7YCXu2HkAGFfMEympadjT44GfAN8C84CxZnYvVKk+/YiRxLGXRhZiKPACvuipWLlmwBnATEm7RuoMwb1og6hNEOAeuSGhXttohqQjgBdxAmwQq7cDcGqpyYT2XsDtt84JRXbBvVe3S4q23zL2aQrcDNxI5OBL2gr3Hg4hRhABHXAGchdVQtIA3It2A9AXWAYsCPMeDLwmabSkRqF8n5B/A5AO+zYHaIsT1iuSDoj10SHszSXANrjXdAnQD7gDeLjI2DoDr4Q16Q58HtboIGC8pEtgEyCKcJDjPv8VwIch/wR8wRuUaaoD8GBhs/CFLlcH/ICOiYynE3Afzh3rMp/GwEPAvhUUHwj8rkR+H5LdkJfhHLkcqiIKSYcBk4CtcULc1sz2MLNeuHp2DE4wB1Fz9t7ApeeFQGsz28vM+gDtcGnYArgzRvzDcelwC7C9mfU1s274Hv4trF8cLYAnw9gGAluZ2U641/KCUOZKSS03RvWpmaS7w+9WwCG4uI3iQTNbLWlzYFQs7yvgYly3Px04IZLXDd+4h8zsKUkzgF547GU6Lma3w1W1KEM5XtJ5ZvYJzr22SBj3XJwz9aA0M/oNfmiieAH4I87Vb8RVwwIul3RHEfvmkCJ99I89L8DVji2An4YxzjSzJyrdFEktgPFhbqea2T+i+UGdmRBU3TYF9cbMVkjaM6oGhvRVwLBAaD2AfYBXQ3af8H1FKFeo8yGuGiXhV/jeHxC1ycK6jZZ0bFj3vhsjUaQorX4sw0U/uHu2XSz/ajMbAyAphx+cNpH8o6nhNFfg9sT1ZvZBoYCky/GgYgENgJ6SnmRtIivgbDMbG+r2wHXlFkXGf1bs+SvgqILTIEiSuyP52+NSZWZCWwXiez/MaRGu1v0+Vu49YFQg6oLzommV+3JmWMdH4gQRhZktB5bH0taUaHcqThRdqSGKgp2zSyStHFoCA0s4KabhRNF5YySKUlgEHGtm74fngxPKHBe4TwHxze9a+GFmkyVNAXpLOhnfhG1waRFHG9yr1SqWbgWCCA8vS7oZJ7i1ECRbr1jyN7haV3jeMqHvvUgmCoDJOFF952GT9Apr2yoCFknKAuOAbB2Cn0eE779WWS86/8a4WtcJP8TNw9yIreu9eEB5kqTBwMQyhAWwEI9sF0PBBm20qRHFk2Y2I/KcFH0vp6u3Bgg67Om4/rpDBX03wo3DOJ5NSJtepI321FatWpBM3FG0LJL+Lc4d4y7nK3EVKiqtmgDHhs9cSWeb2XMVzLuAncN3pZz7O0jqClyKE1axuUTP6q044VyAH/S5ksYCdyZ5AgNeKEM436mfG8rQTq1D3a9x9egq4INY3sAg+tcFBY4xGvdkVEIQBSStZ5KuX+xiWiWGfRKKHYTZZrYonmhmc4AD8ZsKSegCPC2pdxVjaBa+v6hm4JJOBGbjaudk3BPYG5e6O+EEEB//GjO7EFerHsBdq7cACyUNjRnlBXxU6Zg2lKRovg51vzKz4QCSFlNbXN+EbzhAkv74czN7qlQHwQV4Xix5Jm5H/Bt3/Y1LqJoU2e+ZkNajSNeLcHUpui9zgD0rUA+S8EGxDDObBRwg6RD8IB7D2qpkKsz30Ar7WoyrljsDb1ZSQVJ73MO1Ejg0JuULZYqqcWb2CnCipG2Ac4GLcE9jW9yZEkXZQGsBcc7WLp/OrA/p0WLdm0jE7bjnJIq+ko4Ov6ck1BktaS3uL6mrpImBa0Gy12agmWVDgK8/yXgL9zBFcYSkfpG+2uObVwtBzZkWS+4KXCOpYaSNxpJOkzQj2CHFUPS2sKQRkvqa2dNmdhIuER+PFat1OzmfzuyYT2c6JpyTgqp1DJXjcPyGwNgkggjoW64RM/s4MMr9cEk1JAQQ64S4pOgFLMmnM+/gXHYWLmKfT+WyqyppMLx0dBDODXfHdb9qVJCKYWbfSBpOba49QtIk3Ge+gBp9lzCmtyQ9g6tKu+OBHIA9JD1Isnp3jqT7gF8DJxcZz2pJjwCnRJIbAk+E8SzHvVmtKI5b8SBWFMNwjvgSzs0PxP3t4MHFW6pZN0lH4Zz0YknT8Qj7MtyTFcVnhR/5dKYJ8BguJQHeyqcz/VK57MLwfBcenBsqaXypqyKSWpvZUmrek1lapFwvkiVtIsxsvqRpeJC2E66WVY0kqdAa2B/X8a4PC/ZJPp0Zn09nDkyqEzjHNYGY5uFXBM7GDcSOrF/b5T5cxYhiV+Cs8F7FINzgjGJznNufRA1BgBPPGbiKFMc5ODccXGY8I/Cr9FE0wt3Dp1CaIMAvXE5ISO+ME+TR1BAEuC+/YkkcotnRG8R98GDeTXicJopJkd8DqCEIgN2IvMpsZi/jNtiWuD1SS8pIaihpIDBfUkdq1KzfSmoWK7sNcA+ulkXTm0iaHCLnSXPrjkvIdytdkzgqtSm2wLnjydTe8EH4rdRqjMSv6zrgOMzsW0nDqO1uGy5pnJlNkXQ2fhDKGfhrcH30NjxgVszQXIgH0modRjObE9yEt5XoZx4uoZLms0bSqfhVhX6Ux9c4h59XQVlwDlpJtH0BcG3kOckNHb/+ci5uV2SAVyX9C2ckK3BjOBO+P8GZw2T82kV3YLqkMWFtu+Eq5kr8/tjISB/dcGZ7qKQXgUdxW6wdTqRtgTEhHlInNMSvKDyDi5o3CdcjSiC+oJtRmiCW41e8Z+OBo8dI1vXXBROp/UcIbQlv+5nZ7bh+/DDJBPkFLnF6mtm1wUd/JJBNKPsYzl2LGm6hv/64jRHHIzi3p0T9FbgKcAbFD/v8ML8uZlYpQRQM7N3xKxRJjoE8HhzsHVScApJUkddiba+i5n2Wd/HI//XAn/F7VtvijpG9zGxWiGr3xw/23riN+ARuLM/G1cRPY33MxFXzCbhqdR0uUUbgWskt+AXIOiPxMOfTmaa4uO6Ch/0HUISzxbAMPzTP4v7q/6Ry2aUV1PvBIKk5vgHt8QPwATCr2Cus4dr2PrhInm1m/6uyv25hLVfXpX5kDLvgPvzlwBwzW1htOwntNsAN+U64R/Bj/HrH50nl8+nMRXjEfQ1+j2hoKpfNl2i/K+5W3RyPqr8avZYRK7sDHkNK4e/bF3tXJlqnJS5l2uLSaIaZLVvXdalY5cmnM3vhHGAgtaPAz+B3jCalctkf+/vR9ahHSVQdLArvW1+E67vvAaNSuWxuQ0+kHvX4vvB/Nt0H8nEjefsAAAAASUVORK5CYII="/>
+                </svg>
+            </a>
+            <ul class="main-menu">
+                <li><a href="#">How it works</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Join our team</a></li>
+                <li><a class="indiegogo" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="121"
+                         height="17" viewBox="0 0 121 17">
+                        <image id="indiegogo" width="121" height="17"
+                               xlink:href="data:img/png;base64,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"/>
+                    </svg>
+                    <p>We are life
+                    <p>
+                </a></li>
+            </ul>
+        </header>
+        <div class="screen2">
+            <p class="number"># 1</p>
+            <p class="features_text"><span>Discover</span> books on social networks from people you know and trust</p>
+            <button class="btn">support us</button>
+        </div>
+        <header class="main-header">
+            <a class="logo" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="197"
+                     height="26"
+                     viewBox="0 0 197 26">
+                    <image id="logo" width="197" height="26"
+                           xlink:href="data:img/png;base64,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"/>
+                </svg>
+            </a>
+            <ul class="main-menu">
+                <li><a href="#">How it works</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Join our team</a></li>
+                <li><a class="indiegogo" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="121"
+                         height="17" viewBox="0 0 121 17">
+                        <image id="indiegogo" width="121" height="17"
+                               xlink:href="data:img/png;base64,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"/>
+                    </svg>
+                    <p>We are life
+                    <p>
+                </a></li>
+            </ul>
+        </header>
+        <div class="screen3">
+            <p class="number"># 2</p>
+            <p class="features_text"><span>Buy</span> books with one click on social networks and get your Buy Button,
+                <span>share</span> your Buy
+                Button to <span>monetize</span> your social influence</p>
+            <button class="btn">support us</button>
+        </div>
+        <header class="main-header">
+            <a class="logo" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="197"
+                     height="26"
+                     viewBox="0 0 197 26">
+                    <image id="logo" width="197" height="26"
+                           xlink:href="data:img/png;base64,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"/>
+                </svg>
+            </a>
+            <ul class="main-menu">
+                <li><a href="#">How it works</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Join our team</a></li>
+                <li><a class="indiegogo" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="121"
+                         height="17" viewBox="0 0 121 17">
+                        <image id="indiegogo" width="121" height="17"
+                               xlink:href="data:img/png;base64,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"/>
+                    </svg>
+                    <p>We are life
+                    <p>
+                </a></li>
+            </ul>
+        </header>
+        <div class="screen4">
+            <div class="screen4__text_block">
+                <p class="number"># 3</p>
+                <p class="features_text">Get real <span>cash back</span> whenever someone <span>buys</span> a book you
+                    recommend</p>
+                <div class="check_score">
+                    <h3 class="check_score__header">Check your Influence Score</h3>
+                    <p class="check_score__text">To see how much <span>money</span> you can potentially earn <span>for sharing books</span>
+                        with friends on social networks</p>
+                    <h3 class="check_score__header">Choose social network</h3>
+                    <div class="socials__items">
+                        <a class="socials__icon">
+                            <svg class="socials__icon_image socials__icon--facebook" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
+                              <path d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"/>
+                            </svg>
+                        </a>
+                        <a class="socials__icon">
+                            <svg class="socials__icon_image socials__icon--twitter" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z"/>
+                            </svg>
+                        </a>
+                        <a class="socials__icon">
+                            <svg class="socials__icon_image socials__icon--linkedin" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="17.5px" viewBox="0 0 93.06 93.06" style="enable-background:new 0 0 93.06 93.06;" xml:space="preserve">
+                                <path d="M11.185,0.08C5.004,0.08,0.001,5.092,0,11.259c0,6.173,5.003,11.184,11.186,11.184c6.166,0,11.176-5.011,11.176-11.184
+                                    C22.362,5.091,17.351,0.08,11.185,0.08z"/>
+                                <rect x="1.538" y="30.926" width="19.287" height="62.054"/>
+                                <path d="M69.925,29.383c-9.382,0-15.673,5.144-18.248,10.022h-0.258v-8.479H32.921H32.92v62.053h19.27V62.281
+                                    c0-8.093,1.541-15.932,11.575-15.932c9.89,0,10.022,9.256,10.022,16.451v30.178H93.06V58.942
+                                    C93.06,42.235,89.455,29.383,69.925,29.383z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="screen4__telephone_block"></div>
+        </div>
+        <header class="main-header">
+            <a class="logo" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="197"
+                     height="26"
+                     viewBox="0 0 197 26">
+                    <image id="logo" width="197" height="26"
+                           xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMUAAAAaCAYAAAAHUJgKAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4QcBFDUEpSPU8QAADGFJREFUeNrtnHn0lXMex18tN6lIKUooGUshlKQm3HnLqOFaxmAwY4khMsicOEeWLMNESJ3Zsk9ZzrFMuTEkny4SmVCWSjTDKCJKHURXmj8+3+v39Pyeu/2S1Pm9z7nn3ue7b5/9+9wG+XTmNmBL4BNgCfAx8C7wNrAglct+Sx2QT2faAV2AjkB7oFX4tARGpnLZl+rSbj3qsb7RGDizRP7KfDrzEjAFeCiVy84rVjCfzrQGjgR+ARwEbFui3ceBeqKox48Sjcvkbw4cHD7X5NOZ6cCIVC77aKFAPp3ZDbgEOAnYbENPqB71WFeUI4o4+gAT8+nMVOAy4DjgvDq0UzEkHQm0LpL9JfAFsBh4zczy633Fvp857QgoljzNzN7Z0GPb1CApBTQHvjazlZXUiR/mN4DzgR2BrkB3oCduB0TxM+D5Im1+A8wCXgZeB94J5S+p47yuBvauoNxSSSOBG83sm+9tVdcPugN3xdJOx9eqHt8vDgf+CdwKXFhJhThRLEjlslOjCfl0phGwH3AMcCJOMHGsAiYA9wOWymVXxNpo/wNMvjVwHdBL0i/NrE4OgnrUo6zak8plVwMzgBn5dOZS4CbWpriXgQGpXHbJhp5MwFHAIOAvG3og9dg40bCawsE9OzGWPO0HJojVwDPAc7jbOAnn/4DjqccmhvVmIK9HfG5m6cKDpP2BHO4pK2A3SW3NrBaxStoC2BWPzXwGzDWzr8p1GozjDriHbQkwz8xWV1BvW2BnoAnuEJhf7YQl7QRshzOxhWb23zq0kQJ2AT4ys08j6Y2B3YE2OMN538zerbb9TQkbI1GsBTN7SdJUPD4SRXv88AIgqRdwFe71SUXKfSnpfuAyM1scbUBSN+AcIIMTRBTLJd0JDDezFbE8JO0LjMSdDA0iWe8DVm5ekjYDBodP51je27j9dI+ZrYmkfxZr5k/ACOAPwDBgK2AIMEpSK+By3MDfKtb+ImAsMNLMvqx2TyS1BM4CjsAJscAQcsDfzez1WPm2wGnAYXjAtznwUSg/0szeTuhja2Bo6GN7YCXu2HkAGFfMEympadjT44GfAN8C84CxZnYvVKk+/YiRxLGXRhZiKPACvuipWLlmwBnATEm7RuoMwb1og6hNEOAeuSGhXttohqQjgBdxAmwQq7cDcGqpyYT2XsDtt84JRXbBvVe3S4q23zL2aQrcDNxI5OBL2gr3Hg4hRhABHXAGchdVQtIA3It2A9AXWAYsCPMeDLwmabSkRqF8n5B/A5AO+zYHaIsT1iuSDoj10SHszSXANrjXdAnQD7gDeLjI2DoDr4Q16Q58HtboIGC8pEtgEyCKcJDjPv8VwIch/wR8wRuUaaoD8GBhs/CFLlcH/ICOiYynE3Afzh3rMp/GwEPAvhUUHwj8rkR+H5LdkJfhHLkcqiIKSYcBk4CtcULc1sz2MLNeuHp2DE4wB1Fz9t7ApeeFQGsz28vM+gDtcGnYArgzRvzDcelwC7C9mfU1s274Hv4trF8cLYAnw9gGAluZ2U641/KCUOZKSS03RvWpmaS7w+9WwCG4uI3iQTNbLWlzYFQs7yvgYly3Px04IZLXDd+4h8zsKUkzgF547GU6Lma3w1W1KEM5XtJ5ZvYJzr22SBj3XJwz9aA0M/oNfmiieAH4I87Vb8RVwwIul3RHEfvmkCJ99I89L8DVji2An4YxzjSzJyrdFEktgPFhbqea2T+i+UGdmRBU3TYF9cbMVkjaM6oGhvRVwLBAaD2AfYBXQ3af8H1FKFeo8yGuGiXhV/jeHxC1ycK6jZZ0bFj3vhsjUaQorX4sw0U/uHu2XSz/ajMbAyAphx+cNpH8o6nhNFfg9sT1ZvZBoYCky/GgYgENgJ6SnmRtIivgbDMbG+r2wHXlFkXGf1bs+SvgqILTIEiSuyP52+NSZWZCWwXiez/MaRGu1v0+Vu49YFQg6oLzommV+3JmWMdH4gQRhZktB5bH0taUaHcqThRdqSGKgp2zSyStHFoCA0s4KabhRNF5YySKUlgEHGtm74fngxPKHBe4TwHxze9a+GFmkyVNAXpLOhnfhG1waRFHG9yr1SqWbgWCCA8vS7oZJ7i1ECRbr1jyN7haV3jeMqHvvUgmCoDJOFF952GT9Apr2yoCFknKAuOAbB2Cn0eE779WWS86/8a4WtcJP8TNw9yIreu9eEB5kqTBwMQyhAWwEI9sF0PBBm20qRHFk2Y2I/KcFH0vp6u3Bgg67Om4/rpDBX03wo3DOJ5NSJtepI321FatWpBM3FG0LJL+Lc4d4y7nK3EVKiqtmgDHhs9cSWeb2XMVzLuAncN3pZz7O0jqClyKE1axuUTP6q044VyAH/S5ksYCdyZ5AgNeKEM436mfG8rQTq1D3a9x9egq4INY3sAg+tcFBY4xGvdkVEIQBSStZ5KuX+xiWiWGfRKKHYTZZrYonmhmc4AD8ZsKSegCPC2pdxVjaBa+v6hm4JJOBGbjaudk3BPYG5e6O+EEEB//GjO7EFerHsBdq7cACyUNjRnlBXxU6Zg2lKRovg51vzKz4QCSFlNbXN+EbzhAkv74czN7qlQHwQV4Xix5Jm5H/Bt3/Y1LqJoU2e+ZkNajSNeLcHUpui9zgD0rUA+S8EGxDDObBRwg6RD8IB7D2qpkKsz30Ar7WoyrljsDb1ZSQVJ73MO1Ejg0JuULZYqqcWb2CnCipG2Ac4GLcE9jW9yZEkXZQGsBcc7WLp/OrA/p0WLdm0jE7bjnJIq+ko4Ov6ck1BktaS3uL6mrpImBa0Gy12agmWVDgK8/yXgL9zBFcYSkfpG+2uObVwtBzZkWS+4KXCOpYaSNxpJOkzQj2CHFUPS2sKQRkvqa2dNmdhIuER+PFat1OzmfzuyYT2c6JpyTgqp1DJXjcPyGwNgkggjoW64RM/s4MMr9cEk1JAQQ64S4pOgFLMmnM+/gXHYWLmKfT+WyqyppMLx0dBDODXfHdb9qVJCKYWbfSBpOba49QtIk3Ge+gBp9lzCmtyQ9g6tKu+OBHIA9JD1Isnp3jqT7gF8DJxcZz2pJjwCnRJIbAk+E8SzHvVmtKI5b8SBWFMNwjvgSzs0PxP3t4MHFW6pZN0lH4Zz0YknT8Qj7MtyTFcVnhR/5dKYJ8BguJQHeyqcz/VK57MLwfBcenBsqaXypqyKSWpvZUmrek1lapFwvkiVtIsxsvqRpeJC2E66WVY0kqdAa2B/X8a4PC/ZJPp0Zn09nDkyqEzjHNYGY5uFXBM7GDcSOrF/b5T5cxYhiV+Cs8F7FINzgjGJznNufRA1BgBPPGbiKFMc5ODccXGY8I/Cr9FE0wt3Dp1CaIMAvXE5ISO+ME+TR1BAEuC+/YkkcotnRG8R98GDeTXicJopJkd8DqCEIgN2IvMpsZi/jNtiWuD1SS8pIaihpIDBfUkdq1KzfSmoWK7sNcA+ulkXTm0iaHCLnSXPrjkvIdytdkzgqtSm2wLnjydTe8EH4rdRqjMSv6zrgOMzsW0nDqO1uGy5pnJlNkXQ2fhDKGfhrcH30NjxgVszQXIgH0modRjObE9yEt5XoZx4uoZLms0bSqfhVhX6Ux9c4h59XQVlwDlpJtH0BcG3kOckNHb/+ci5uV2SAVyX9C2ckK3BjOBO+P8GZw2T82kV3YLqkMWFtu+Eq5kr8/tjISB/dcGZ7qKQXgUdxW6wdTqRtgTEhHlInNMSvKDyDi5o3CdcjSiC+oJtRmiCW41e8Z+OBo8dI1vXXBROp/UcIbQlv+5nZ7bh+/DDJBPkFLnF6mtm1wUd/JJBNKPsYzl2LGm6hv/64jRHHIzi3p0T9FbgKcAbFD/v8ML8uZlYpQRQM7N3xKxRJjoE8HhzsHVScApJUkddiba+i5n2Wd/HI//XAn/F7VtvijpG9zGxWiGr3xw/23riN+ARuLM/G1cRPY33MxFXzCbhqdR0uUUbgWskt+AXIOiPxMOfTmaa4uO6Ch/0HUISzxbAMPzTP4v7q/6Ry2aUV1PvBIKk5vgHt8QPwATCr2Cus4dr2PrhInm1m/6uyv25hLVfXpX5kDLvgPvzlwBwzW1htOwntNsAN+U64R/Bj/HrH50nl8+nMRXjEfQ1+j2hoKpfNl2i/K+5W3RyPqr8avZYRK7sDHkNK4e/bF3tXJlqnJS5l2uLSaIaZLVvXdalY5cmnM3vhHGAgtaPAz+B3jCalctkf+/vR9ahHSVQdLArvW1+E67vvAaNSuWxuQ0+kHvX4vvB/Nt0H8nEjefsAAAAASUVORK5CYII="/>
+                </svg>
+            </a>
+            <ul class="main-menu">
+                <li><a href="#">How it works</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Join our team</a></li>
+                <li><a class="indiegogo" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="121"
+                         height="17" viewBox="0 0 121 17">
+                        <image id="indiegogo" width="121" height="17"
+                               xlink:href="data:img/png;base64,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"/>
+                    </svg>
+                    <p>We are life
+                    <p>
+                </a></li>
+            </ul>
+        </header>
+        <div class="screen5">
+            <div class="user">
+                <div class="user__influence">
+                    <img class="user__image" src="img/user_photo.png" width="72" height="72">
+                    <p class="user__influence_text">Influence score</p>
+                    <p class="user__number">428</p>
+                </div>
+                <h3 class="user__header">You score in real cash</h3>
+                <p class="user__cost">$ 26</p>
+                <p class="user__text">For one $20 book shared on your Facebook</p>
+                <h3 class="user__header">To monetize your social influence</h3>
+                <ul class="user__list">
+                    <li>Choose the book and share Buy Button with your friends</li>
+                    <li>Earn money whenever someone buys a book you recommended</li>
+                </ul>
+                <div class="socials">
+                    <h3 class="socials__header">Share with friends</h3>
+                    <div class="socials__items">
+                        <a class="socials__icon">
+                            <svg class="socials__icon_image socials__icon--facebook" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
+                              <path d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"/>
+                            </svg>
+                        </a>
+                        <a class="socials__icon">
+                            <svg class="socials__icon_image socials__icon--twitter" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z"/>
+                            </svg>
+                        </a>
+                        <a class="socials__icon">
+                            <svg class="socials__icon_image socials__icon--linkedin" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="17.5px" viewBox="0 0 93.06 93.06" style="enable-background:new 0 0 93.06 93.06;" xml:space="preserve">
+                                <path d="M11.185,0.08C5.004,0.08,0.001,5.092,0,11.259c0,6.173,5.003,11.184,11.186,11.184c6.166,0,11.176-5.011,11.176-11.184
+                                    C22.362,5.091,17.351,0.08,11.185,0.08z"/>
+                                <rect x="1.538" y="30.926" width="19.287" height="62.054"/>
+                                <path d="M69.925,29.383c-9.382,0-15.673,5.144-18.248,10.022h-0.258v-8.479H32.921H32.92v62.053h19.27V62.281
+                                    c0-8.093,1.541-15.932,11.575-15.932c9.89,0,10.022,9.256,10.022,16.451v30.178H93.06V58.942
+                                    C93.06,42.235,89.455,29.383,69.925,29.383z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="books">
+                <div class="books__item">
+                    <img  class="books__image" src="img/book1.png" width="100" height="123">
+                    <div class="books__text">
+                        <h3 class="books__header">Dot-to-Dot Mindfulness</h3>
+                        <p class="books__author">by Chris Bell</p>
+                        <p class="books__cost">$ 8.79</p>
+                    </div>
+                    <div class="books__wrapper">
+                        <div class="socials__items socials__items--books">
+                            <a class="socials__icon socials__icon--books">
+                                <svg class="socials__icon_image socials__icon--facebook socials__icon_image--books" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
+                              <path d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"/>
+                            </svg>
+                            </a>
+                            <a class="socials__icon socials__icon--books">
+                                <svg class="socials__icon_image socials__icon--twitter socials__icon_image--books" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z"/>
+                            </svg>
+                            </a>
+                            <a class="socials__icon socials__icon--books">
+                                <svg class="socials__icon_image socials__icon--linkedin socials__icon_image--books" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="17.5px" viewBox="0 0 93.06 93.06" style="enable-background:new 0 0 93.06 93.06;" xml:space="preserve">
+                                <path d="M11.185,0.08C5.004,0.08,0.001,5.092,0,11.259c0,6.173,5.003,11.184,11.186,11.184c6.166,0,11.176-5.011,11.176-11.184
+                                    C22.362,5.091,17.351,0.08,11.185,0.08z"/>
+                                <rect x="1.538" y="30.926" width="19.287" height="62.054"/>
+                                <path d="M69.925,29.383c-9.382,0-15.673,5.144-18.248,10.022h-0.258v-8.479H32.921H32.92v62.053h19.27V62.281
+                                    c0-8.093,1.541-15.932,11.575-15.932c9.89,0,10.022,9.256,10.022,16.451v30.178H93.06V58.942
+                                    C93.06,42.235,89.455,29.383,69.925,29.383z"/>
+                            </svg>
+                            </a>
+                        </div>
+                        <button class="btn btn--books">increase my score</button>
+                    </div>
+                </div>
+                <div class="books__item">
+                    <img class="books__image" src="img/book2.png" width="100" height="123">
+                    <div class="books__text">
+                        <h3 class="books__header">Dot-to-Dot Therapy</h3>
+                        <p class="books__author">by David Woodroffe</p>
+                        <p class="books__cost">$ 10.20</p>
+                    </div>
+                    <div class="books__wrapper">
+                        <div class="socials__items socials__items--books">
+                            <a class="socials__icon socials__icon--books">
+                                <svg class="socials__icon_image socials__icon--facebook socials__icon_image--books" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
+                              <path d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"/>
+                            </svg>
+                            </a>
+                            <a class="socials__icon socials__icon--books">
+                                <svg class="socials__icon_image socials__icon--twitter socials__icon_image--books" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z"/>
+                            </svg>
+                            </a>
+                            <a class="socials__icon socials__icon--books">
+                                <svg class="socials__icon_image socials__icon--linkedin socials__icon_image--books" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="17.5px" viewBox="0 0 93.06 93.06" style="enable-background:new 0 0 93.06 93.06;" xml:space="preserve">
+                                <path d="M11.185,0.08C5.004,0.08,0.001,5.092,0,11.259c0,6.173,5.003,11.184,11.186,11.184c6.166,0,11.176-5.011,11.176-11.184
+                                    C22.362,5.091,17.351,0.08,11.185,0.08z"/>
+                                <rect x="1.538" y="30.926" width="19.287" height="62.054"/>
+                                <path d="M69.925,29.383c-9.382,0-15.673,5.144-18.248,10.022h-0.258v-8.479H32.921H32.92v62.053h19.27V62.281
+                                    c0-8.093,1.541-15.932,11.575-15.932c9.89,0,10.022,9.256,10.022,16.451v30.178H93.06V58.942
+                                    C93.06,42.235,89.455,29.383,69.925,29.383z"/>
+                            </svg>
+                            </a>
+                        </div>
+                        <button class="btn btn--books">increase my score</button>
+                    </div>
+                </div>
+                <div class="books__item">
+                    <img class="books__image" src="img/book3.png" width="100" height="123">
+                    <div class="books__text">
+                        <h3 class="books__header">Cute Animals: Color by Numbers (hobbies and Craft)</h3>
+                        <p class="books__author">by Daisy Seat, Flame Tree Studio</p>
+                        <p class="books__cost">$ 15.79</p>
+                    </div>
+                    <div class="books__wrapper">
+                        <div class="socials__items socials__items--books">
+                            <a class="socials__icon socials__icon--books">
+                                <svg class="socials__icon_image socials__icon--facebook socials__icon_image--books" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
+                                  <path d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"/>
+                                </svg>
+                            </a>
+                            <a class="socials__icon socials__icon--books">
+                                <svg class="socials__icon_image socials__icon--twitter socials__icon_image--books" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+                                      <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z"/>
+                                </svg>
+                            </a>
+                            <a class="socials__icon socials__icon--books">
+                                <svg class="socials__icon_image socials__icon--linkedin socials__icon_image--books" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="17.5px" viewBox="0 0 93.06 93.06" style="enable-background:new 0 0 93.06 93.06;" xml:space="preserve">
+                                    <path d="M11.185,0.08C5.004,0.08,0.001,5.092,0,11.259c0,6.173,5.003,11.184,11.186,11.184c6.166,0,11.176-5.011,11.176-11.184
+                                        C22.362,5.091,17.351,0.08,11.185,0.08z"/>
+                                    <rect x="1.538" y="30.926" width="19.287" height="62.054"/>
+                                    <path d="M69.925,29.383c-9.382,0-15.673,5.144-18.248,10.022h-0.258v-8.479H32.921H32.92v62.053h19.27V62.281
+                                        c0-8.093,1.541-15.932,11.575-15.932c9.89,0,10.022,9.256,10.022,16.451v30.178H93.06V58.942
+                                        C93.06,42.235,89.455,29.383,69.925,29.383z"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <button class="btn btn--books">increase my score</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

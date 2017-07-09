@@ -1,0 +1,303 @@
+@font-face {
+    font-family: Moon Light;
+    src: url('../fonts/Moon Light.otf');
+}
+@font-face {
+    font-family: Moon Bold;
+    src: url('../fonts/Moon Bold.otf');
+}
+@font-face {
+    font-family: Proxima Nova Black;
+    src: url('../fonts/Proxima Nova Black.otf');
+}
+@font-face {
+    font-family: Proxima Nova Bold;
+    src: url('../fonts/Proxima Nova Bold.otf');
+}
+@font-face {
+    font-family: Proxima Nova ExtraBold;
+    src: url('../fonts/Proxima Nova Extrabold.otf');
+}
+@font-face {
+    font-family: Proxima Nova Light;
+    src: url('../fonts/Proxima Nova Light.otf');
+}
+@font-face {
+    font-family: Proxima Nova Regular;
+    src: url('../fonts/Proxima Nova Regular.otf');
+}
+@font-face {
+    font-family: Proxima Nova Semibold;
+    src: url('../fonts/Proxima Nova Semibold.otf');
+}
+.container{
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+.main-header {
+    padding: 0 6%;
+    display: flex;
+    justify-content: space-between;
+    height: 77px;
+    align-items: center;
+    background-color: #f7f7f7;
+}
+.main-menu{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    width: 700px;
+}
+.logo {
+    display: block;
+    width: 197px;
+    height: 27px;
+    margin-right: 30px;
+}
+.main-menu li{
+}
+.main-menu li a {
+    text-decoration: none;
+    font-family: "Proxima Nova Regular", Arial, sans-serif;
+    font-size: 22px;
+    color: #000000;
+
+}
+.indiegogo p {
+    font-size: 11px;
+    margin-top: -3px;
+    color: #f44141;
+    line-height: 11px;
+    text-align: center;
+}
+.screen1{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    margin-bottom: 110px;
+
+
+}
+.about {
+    margin-top: 40px;
+    width: 50%;
+}
+.about__header {
+    font-family: "Moon Light", Arial, sans-serif;
+    text-align: center;
+    font-size: 39px;
+    line-height: 45px;
+}
+.about__cash {
+    font-family: "Moon Bold", Arial, sans-serif;
+    color: #f34747;
+}
+.about__readers{
+    font-family: "Moon Bold", Arial, sans-serif;
+    color: #000000;
+}
+.about__text{
+    font-family: "Proxima Nova Semibold", Arial, sans-serif;
+    color: #000000;
+    font-size: 22px;
+}
+.about__form{
+    width: 87.26%;
+    margin-left: 40px;
+}
+.about__text span{
+    color: #f34747;
+}
+.about__mailform{
+    display: flex;
+}
+.btn{
+    height: 60px;
+    background-color: #f34747;
+    border-style: none;
+    border-radius: 5px;
+    margin: 0;
+    padding: 0 20px;
+    color: #ffffff;
+    font-size: 22px;
+    font-family: "Moon Bold", Arial, sans-serif;
+}
+.textbox{
+    border: 1px solid #dedede;
+    box-shadow: 0 3px 5px 3px #dedede;
+    flex-grow: 2;
+    margin-right: 25px;
+    font-size: 21px;
+    font-family: "Proxima Nova Light", Arial, sans-serif;
+    padding-left: 20px;
+}
+main {
+    background: #f7f7f7 url('../img/discover.png') 0 743px no-repeat;
+    background-size: 100%;
+}
+.screen2{
+    margin-top: 65px;
+    background: url('../img/telephone1.png') 50% 95px no-repeat;
+    height: 693px;
+    padding-left: 68%;
+    padding-top: 355px;
+}
+.number{
+    font-family: "Proxima Nova Semibold", Arial, sans-serif;
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+.features_text {
+    font-family: "Proxima Nova Regular", Arial, sans-serif;
+    font-size: 29px;
+    line-height: 33px;
+    margin-bottom: 30px;
+}
+.features_text span {
+    color: #f34747;
+}
+.screen3 {
+    height: 693px;
+    background: url('../img/telephone2.png') 50% 30px no-repeat,
+                url('../img/buy_share.png') no-repeat 10% 90px;
+    padding-left: 68%;
+    padding-top: 255px;
+}
+.screen4 {
+    height: 693px;
+    background: url('../img/earn.png') no-repeat 7% 200px;
+    padding-left: 18.15%;
+    padding-right: 15.56%;
+    display: flex;
+    justify-content: space-between;
+}
+.screen4__text_block {
+    width: 385px;
+    padding-top: 100px;
+}
+.screen4__telephone_block {
+    background: url('../img/telephone3.png') 50% 30px no-repeat;
+    width: 368px;
+    height: 686px;
+}
+.check_score {
+    width: 375px;
+    height: 280px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 10px 2px #dedede;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 25px;
+}
+.check_score__header {
+    font-family: "Proxima Nova";
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+.check_score__text {
+    font-family: "Proxima Nova Regular", Arial, sans-serif;
+    margin-bottom: 20px;
+}
+.socials__items {
+    display: flex;
+    width: 195px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.socials__icon {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background-color: #f34747;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+
+}
+.socials__icon_image {
+    fill: #ffffff;
+    display: inline-block;
+}
+.socials__icon--facebook{
+    height: 54%;
+    width: 34%;
+}
+.socials__icon--twitter{
+    width: 50%;
+    height: 42%;
+}
+.socials__icon--linkedin{
+    width: 45%;
+    height: 45%;
+}
+.screen5 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 7.3%;
+    padding-top: 20px;
+}
+.user {
+    with: 25.32%;
+    height: 495px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 10px 2px #dedede;
+    margin-right: 5.85%;
+}
+.books__item {
+    background-color: #ffffff;
+    box-shadow: 0 3px 10px 2px #dedede;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.books__image{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 7.11%;
+    margin-right: 5.63%;
+}
+.books__wrapper{
+    margin-right: 7.11%;
+    width: 34.22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.btn--books{
+    width: 100%;
+    height: 47px;
+    font-size: 18px;
+}
+.socials__icon--books{
+    width: 32px;
+    height: 32px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+}
+.socials__icon_image--books {
+    fill: #000000;
+}
+.socials__items--books {
+    width: 142px;
+}
+.books__cost{
+    font-family: "Proxima Nova Semibold", Arial, sans-serif;
+    font-size: 26px;
+}
+.books__header{
+    font-family: "Proxima Nova Regular", Arial, sans-serif;
+    font-size: 22px;
+    margin-bottom: 0;
+}
+.books__author{
+    color: #898989;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
