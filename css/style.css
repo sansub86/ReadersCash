@@ -301,3 +301,222 @@ main {
     font-size: 15px;
     margin-bottom: 20px;
 }
+.user__influence{
+    width: 300px;
+    height: 100px;
+    border: 2px solid #cfcfcf;
+    margin: 30px auto 0 auto;
+    display: flex;
+    padding: 10px 17px;
+    position: relative;
+}
+.user__influence_text {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.user__text_block{
+    font-family: "Proxima Nova Semibold", Arial, sans-serif;
+    padding-left: 17px;
+    position: relative;
+}
+.user__number{
+    font-size: 44px;
+    line-height: 44px;
+
+}
+.user__number::after{
+    content: '';
+    display: block;
+    width: 28px;
+    height: 28px;
+    background: url("../img/check.png") 50% 0 no-repeat;
+    position: absolute;
+    z-index: 2;
+    top: 40px;
+    left: 100px;
+}
+.user__header{
+    font-family: "Proxima Nova Semibold", Arial, sans-serif;
+    font-size: 20px;
+    margin-left: 27px;
+    margin-bottom: 20px;
+}
+.user__wrap_text{
+    display: flex;
+    margin-left: 27px;
+}
+.user__cost{
+    font-family: "Proxima Nova Semibold", Arial, sans-serif;
+    font-size: 36px;
+    color: #ef4b4b;
+    margin: 0;
+    width: 75px;
+}
+.user__text{
+    width:200px;
+    font-family: "Proxima Nova Regular", Arial, sans-serif;
+    font-size: 16px;
+    margin-left: 16px;
+    margin-bottom: 0;
+}
+.socials__icon--share, .socials__icon--dollar {
+    fill: #ffffff;
+}
+.user__item{
+    display: flex;
+    margin-left: 27px;
+    margin-bottom: 20px;
+}
+.socials__header{
+    text-align: center;
+    margin-top: 60px;
+}
+footer{
+    background-color: #565656;
+}
+.footer__copyright{
+    margin-bottom: 0;
+}
+.footer__container{
+    width: 87.55%;
+    height: 56px;
+    line-height: 56px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Proxima Nova Regular", Arial, sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+
+}
+.policy__link{
+    color: #ffffff;
+    text-decoration: none;
+    height: 56px;
+    padding-left: 40px;
+}
+.policy__link:hover{
+    color:#f34747;
+    text-decoration: none;
+}
+.aboutus {
+    width: 68.22%;
+    height: 630px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding-top: 45px;
+    padding-left: 100px;
+    padding-right: 95px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px 2px #dedede;
+}
+.aboutus__header{
+    font-family: "Moon Light", Arial, sans-serif;
+    font-size: 49px;
+    margin: 0;
+    text-align: center;
+}
+.aboutus__h2{
+    font-family: "Proxima Nova Semibold",Arial,sans-serif;
+    font-size: 27px;
+}
+.aboutus__text{
+    font-family: "Proxima Nova Regular",Arial,sans-serif;
+    font-size: 27px;
+    line-height: 36px;
+    margin: 0;
+}
+.aboutus__text--italic{
+    font-style: italic;
+    margin-bottom: 10px;
+}
+.aboutus__text span{
+    font-family: "Proxima Nova Semibold", Arial,sans-serif;
+    color: #f34747;
+}
+.join__wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 84.89%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+.join {
+    width: 50.38%;
+    height: 618px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 10px 2px #dedede;
+    padding-left: 45px;
+    padding-top: 45px;
+    padding-right: 45px;
+}
+.join__header{
+    font-family: "Moon Light", Arial, sans-serif;
+    font-size: 43px;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+.join__text {
+    font-family: "Proxima Nova Regular", Arial, sans-serif;
+    font-size: 25px;
+    line-height: 30px;
+    margin: 0;
+}
+.join__h2{
+    font-family: "Proxima Nova Semibold", Arial, sans-serif;
+    font-size: 25px;
+    margin: 20px 0 0 0;
+}
+.join ul {
+    margin-bottom: 20px;
+}
+.contacts {
+    margin-top: 20px;
+}
+.contacts__text{
+    font-family: "Proxima Nova Semibold", Arial, sans-serif;
+    font-size: 25px;
+    margin: 0;
+}
+.contacts__text span {
+    color: #f44141;
+}
+.feedback{
+    width: 41.48%;
+}
+.feedback__header{
+    font-family: "Proxima Nova Regular", Arial, sans-serif;
+    font-size: 43px;
+    text-align: center;
+    margin: 0;
+}
+
+.feedback__form label{
+    display: block;
+    font-family: "Proxima Nova Regular", Arial,sans-serif;
+    font-size: 24px;
+    margin-top: 30px;
+}
+.textbox--feedback{
+    height: 60px;
+    margin: 0;
+    width: 100%;
+}
+.textbox--textarea{
+    width: 100%;
+    resize: none;
+    padding-top: 10px;
+}
+.btn-send{
+    margin-top: 20px;
+    padding: 0 40px;
+}
+.capcha_wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.capcha{
+    width:235px;
+    background: url('../img/capcha.png') 0 50% no-repeat;
+
+}
