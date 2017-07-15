@@ -35,6 +35,11 @@
     padding: 0;
     width: 100%;
 }
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 .main-header {
     padding: 0 6%;
     display: flex;
@@ -75,12 +80,10 @@
     text-align: center;
 }
 .screen1{
+    margin-top: 70px;
     display: flex;
     justify-content: space-between;
     padding-top: 50px;
-    margin-bottom: 110px;
-
-
 }
 .about {
     margin-top: 40px;
@@ -115,6 +118,12 @@
 .about__mailform{
     display: flex;
 }
+.scrolldown{
+    cursor: pointer;
+    width: 51px;
+    height: 30px;
+    margin: 20px auto 0 auto;
+}
 .btn{
     height: 60px;
     background-color: #f34747;
@@ -136,11 +145,11 @@
     padding-left: 20px;
 }
 main {
-    background: #f7f7f7 url('../img/discover.png') 0 743px no-repeat;
+    background: #f7f7f7 url('../img/discover.png') 0 633px no-repeat;
     background-size: 100%;
 }
 .screen2{
-    margin-top: 65px;
+    margin-top: 70px;
     background: url('../img/telephone1.png') 50% 95px no-repeat;
     height: 693px;
     padding-left: 68%;
@@ -161,13 +170,15 @@ main {
     color: #f34747;
 }
 .screen3 {
+    margin-top: 70px;
     height: 693px;
     background: url('../img/telephone2.png') 50% 30px no-repeat,
-                url('../img/buy_share.png') no-repeat 10% 90px;
+                url('../img/buy_share.png') no-repeat 10% 120px;
     padding-left: 68%;
     padding-top: 255px;
 }
 .screen4 {
+    margin-top: 70px;
     height: 693px;
     background: url('../img/earn.png') no-repeat 7% 200px;
     padding-left: 18.15%;
@@ -238,6 +249,7 @@ main {
     height: 45%;
 }
 .screen5 {
+    margin-top: 70px;
     display: flex;
     justify-content: space-between;
     padding: 0 7.3%;
