@@ -144,7 +144,10 @@ header {
     font-family: "Proxima Nova Light", Arial, sans-serif;
     padding-left: 20px;
 }
-main {
+main{
+    background-color: #f7f7f7;
+}
+.main__index {
     background: #f7f7f7 url('../img/discover.png') 0 633px no-repeat;
     background-size: 100%;
 }
@@ -414,7 +417,7 @@ footer{
 .aboutus {
     width: 68.22%;
     height: 630px;
-    margin: 0 auto;
+    margin: 80px auto 0 auto;
     background-color: #ffffff;
     padding-top: 45px;
     padding-left: 100px;
@@ -450,7 +453,7 @@ footer{
     display: flex;
     justify-content: space-between;
     width: 84.89%;
-    margin: 0 auto;
+    margin: 80px auto 0 auto;
     padding-bottom: 30px;
 }
 .join {
