@@ -200,7 +200,7 @@ main{
 .screen3__telephone_block{
     width: 376px;
     height: 80%;
-    background: url('../img/telephone1.png') 50% 50% no-repeat;
+    background: url('../img/telephone2.png') 50% 50% no-repeat;
     background-size: contain;
     align-self: center;
 }
@@ -1003,18 +1003,18 @@ footer{
 .screen3_slider_btn{
 	position: relative;
 	background: url(../img/telephone2_btn.png) no-repeat;
-	width: 310px;
 	height: 48px;
 	z-index: 5;
-	top: 602px;
+	top: 83%;
 	left: 0;
 	right:0;
 	margin-left: auto;
 	margin-right: auto;
 	background-size:cover;
+	width: 286px;
 }
 .screen3_slider_btn_link{
-	background:none;
+	/* background:none; */
 	display:block;
 }
 .screen3_slider_arrow{
