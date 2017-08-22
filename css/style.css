@@ -200,7 +200,7 @@ main{
 .screen3__telephone_block{
     width: 376px;
     height: 80%;
-    background: url('../img/telephone1.png') 50% 50% no-repeat;
+    background: url('../img/telephone2.png') 50% 50% no-repeat;
     background-size: contain;
     align-self: center;
 }
@@ -937,4 +937,95 @@ footer{
     .btn-send{
         width: 90%;
     }
+}
+/*script.js*/
+.black-back{
+	
+    -moz-pointer-events: none;
+    -webkit-pointer-events: none;
+    -ms-pointer-events: none;
+    pointer-events: none;
+    content: '';
+    background: #2e3842;
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+	z-index:3;
+	opacity:0.8;
+}
+/*screen2*/
+.screen2_inner {
+	margin-left: 68%;
+	padding-top: 355px;
+	position: absolute;
+	z-index: 1;
+}
+.screen3_inner {
+	margin-left: 68%;
+	padding-top: 260px;
+	position: absolute;
+	z-index: 1;
+}
+.screen2_slider {
+	/* position: absolute; */
+	background: url(../img/telephone1_slider.png)  repeat;
+	/* margin:auto; */
+	/* width:325px; */
+	height: 70%;
+	z-index: 2;
+	/* margin-top: 95px; */
+	margin-left: 11.5%;
+	margin-right: 11.5%;
+	left: 0;
+	right: 0;
+	margin-top: 34.2%;
+	background-position-y: -400px;
+	background-size: cover;
+}
+.screen2_slider_btn{
+	position: relative;
+	/* background: url(../img/telephone1_slider_btn.png) no-repeat; */
+	width: 25%;
+	/* height: 31px; */
+	z-index: 5;
+	top: 69%;
+	left: 68.5%;
+	display:none;
+	background-size:cover;
+}
+.screen2_slider_btn_link{
+	background:none;
+	display:block;
+}
+.screen3_slider_btn{
+	position: relative;
+	background: url(../img/telephone2_btn.png) no-repeat;
+	height: 48px;
+	z-index: 5;
+	top: 83%;
+	left: 0;
+	right:0;
+	margin-left: auto;
+	margin-right: auto;
+	background-size:cover;
+	width: 286px;
+}
+.screen3_slider_btn_link{
+	/* background:none; */
+	display:block;
+}
+.screen3_slider_arrow{
+	position: absolute;
+	display:none;
+	width:5em;
+	z-index: 5;
+}
+.screen2_slider_arrow{
+	position: absolute;
+	display:none;
+	width:5em;
+	z-index: 5;
 }
