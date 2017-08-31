@@ -77,17 +77,40 @@
                 </div>
                 <div class="feedback">
                     <h2 class="feedback__header">Request a callback</h2>
-                    <form class="feedback__form" method="post">
+					<!-- памятка о моей конструкции <form class="cmxform" id="feedbackForm" method="get" action="">
+									<fieldset>
+										<legend>Задайте свой вопрос</legend>
+										<p>
+											<label for="user_name">Имя</label>
+											<input id="user_name" name="user_name" minlength="2" type="text" required>
+										</p>
+										<p>
+											<label for="user_email">E-Mail</label>
+											<input id="user_email" type="email" name="user_email" required>
+										</p>
+										<p>
+											<label for="text_comment">Текст сообщения</label>
+											<textarea id="text_comment" name="text_comment" required></textarea>
+										</p>
+										<div class="g-recaptcha"></div>
+										<p>
+											<input class="submit" type="submit" value="Отправить">
+										</p>
+									</fieldset>
+								</form>-->
+                    <form class="feedback__form cmxform" id="feedbackForm"  method="get" action="">
                         <label for="phone-id">Phone</label>
                         <input class="textbox textbox--feedback" type="text" name="phone" id="phone-id" placeholder="Enter your phone">
                         <label for="name-id">Your name</label>
                         <input class="textbox textbox--feedback" type="text" name="name" id="name-id" placeholder="How can we appeal to you?">
                         <label for="textarea-id">Phone</label>
                         <textarea rows="6" cols="40" class="textbox textbox--textarea" name="additionalInfo" id="textarea-id" placeholder="Enter additional information"></textarea>
-                        <div class="capcha_wrapper">
+                        <!-- теперь тут настоящая будет<div class="capcha_wrapper">
                             <div class="capcha"></div>
                             <input class="btn btn-send" type="submit" value="send">
-                        </div>
+                        </div>-->
+						<div class="g-recaptcha"></div>
+						<input class="btn btn-send" type="submit" value="send">
                     </form>
                 </div>
             </div>
@@ -105,7 +128,10 @@
         </div>
     </footer>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.validate.js"></script>
+	<script src="https://www.google.com/recaptcha/api.js?render=explicit&onload=onScriptLoad" async defer></script>
+	<script src="js/feedback.js"></script>
 </body>
 </html>
