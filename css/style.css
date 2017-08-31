@@ -206,7 +206,7 @@ main{
     width: 376px;
     height: 80%;
     background: url('../img/telephone2.png') 50% 50% no-repeat;
-    /*background-size: contain;*/
+    background-size: contain;
     align-self: center;
     flex-shrink: 0;
 }
@@ -981,26 +981,27 @@ footer{
 	/* position: absolute; */
 	background: url(../img/telephone1_slider.png)  repeat;
 	/* margin:auto; */
-	/* width:325px; */
-	height: 575px;
+	height: 70%;
 	z-index: 2;
 	/* margin-top: 95px; */
-	margin-left: 26px;
-    margin-right: 26px;
+	margin-left: 11.5%;
+	margin-right: 11.5%;
 	left: 0;
 	right: 0;
-	margin-top: 101px;
+	margin-top: 34.2%;
 	background-position-y: -400px;
+	background-size: cover;
 }
 .screen2_slider_btn{
 	position: relative;
-	background: url(../img/telephone1_slider_btn.png) no-repeat;
-	height: 31px;
-	width: 80px;
+	/* background: url(../img/telephone1_slider_btn.png) no-repeat; */
+	width: 25%;
+	/* height: 31px; */
 	z-index: 5;
-	top: 61%;
+	top: 69%;
 	left: 68.5%;
-	background-size: cover;
+	display:none;
+	background-size:cover;
 }
 .screen2_slider_btn_link{
 	background:none;
@@ -1018,8 +1019,6 @@ footer{
 	margin-right: auto;
 	background-size:cover;
 	width: 286px;
-	background-position: center;
-	border-radius: 3px;
 }
 .screen3_slider_btn_link{
 	/* background:none; */
