@@ -169,7 +169,7 @@ main{
 }
 .screen2__telephone_block{
     width: 376px;
-    height: 80%;
+    height: 688px;
     background: url('../img/telephone1.png') 50% 50% no-repeat;
     /*background-size: contain;*/
     align-self: center;
@@ -204,7 +204,7 @@ main{
 }
 .screen3__telephone_block{
     width: 376px;
-    height: 80%;
+    height: 688px;
     background: url('../img/telephone2.png') 50% 50% no-repeat;
     /*background-size: contain;*/
     align-self: center;
@@ -232,7 +232,7 @@ main{
 .screen4__telephone_block {
     background: url('../img/telephone3.png') 50% 30px no-repeat;
     width: 376px;
-    height: 80%;
+    height: 688px;
     /*background-size: contain;*/
     align-self: center;
     margin-left: 5%;
