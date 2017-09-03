@@ -151,12 +151,7 @@ function screen3() {
 }
 
 function screen4() {
-    screen3_used = 4;
-    var phone_block_pos = ($(window).width()) / 4 - ($(
-        "screen4__telephone_block").width()) / 2,
-    phone_block_pos_str = "+=" + phone_block_pos + "px";
-    $("screen4__telephone_block").animate({
-        "left": phone_block_pos_str
-    }, "slow");
-    //$(".screen4__text_block").show("1200");
+    screen4_used = 1;
+    
+    $(".screen4__text").slideDown("1500");
 }
